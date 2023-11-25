@@ -22,18 +22,10 @@ public:
 };
 
 
-
-
-
 int main( ){
 vector<int>  nums1={1,2,5,7,8,0,0,0};
 vector<int>  nums2={100,9,6,3,0};
-
-
-
-
 Solution test1;
-
 test1.merge(nums1,nums1.size(),nums2,nums2.size() );
 return 0;
 }

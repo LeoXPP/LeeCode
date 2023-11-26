@@ -9,10 +9,12 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-I",
+                "C:\\Users\\XIE\\Desktop\\LeeCode\\include",
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "C:\\Program Files\\mingw64\\bin"
             },
             "problemMatcher": [
                 "$gcc"

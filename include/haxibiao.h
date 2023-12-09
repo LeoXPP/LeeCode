@@ -3,17 +3,11 @@
 #include<iostream>
 #include<vector>
 #include<string>
-<<<<<<< HEAD
-=======
 #include<unordered_map>
->>>>>>> 422adea (work out the include path)
 using namespace std;
 // 同构字符串
 
 bool isIsomorphic(string s, string t) {
-<<<<<<< HEAD
-    
-=======
     unordered_map<char,char>s2t;
     unordered_map<char,char>t2s;
     int i;
@@ -28,5 +22,4 @@ bool isIsomorphic(string s, string t) {
         t2s[y]=x;
     }
     return true;
->>>>>>> 422adea (work out the include path)
 }

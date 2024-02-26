@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<vector>
 #include<iostream>
-#include<haxibiao.h>
+#include <haxibiao.h>
 using namespace std;
 
 class Solution

@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\include",
+    "\\src"
   ],
-  "SelectedNode": "\\src",
+  "SelectedNode": "\\include\\list_ans.h",
   "PreviewInSolutionExplorer": false
 }

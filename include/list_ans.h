@@ -4,7 +4,4 @@
 #include<unordered_map>
 
 using namespace std;
- 
- bool hasCycle(ListNode *head){
 
- }

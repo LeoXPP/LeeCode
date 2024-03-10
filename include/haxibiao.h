@@ -5,6 +5,7 @@
 #include<string>
 #include<unordered_map>
 using namespace std;
+
 // 同构字符串
 
 bool isIsomorphic(string s, string t) {

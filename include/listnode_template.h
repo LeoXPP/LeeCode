@@ -1,5 +1,4 @@
 #pragma once
-#include<listnode.h>
 #include<stdio.h>
 #include<assert.h>
 #include<stdlib.h>
@@ -121,10 +120,6 @@ void SListErase(SListNode** pphead, SListNode* pos){
     assert(pphead&&pos);
     if(pos==*pphead){
         
-    }
-
-    if(){
-
     }
 }
 

@@ -4,11 +4,8 @@ class TreeNode_xie
 {
     public:
         T val;
-        TreeNode_xie<T> *left;
-        TreeNode_xie<T> *right;
-        TreeNode_xie( T data){
-            this->val = data;
-            this->left = nullptr;
-            this->right = nullptr;
-        }
+        TreeNode_xie *left;
+        TreeNode_xie *right;
+        TreeNode_xie(){val = 0; left = nullptr ; right = nullptr;}
+        TreeNode_xie(T data){val = data; left = nullptr; right = nullptr;}
 };

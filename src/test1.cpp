@@ -4,6 +4,8 @@
 #include "haxibiao.h"
 #include "data_BASE.h"
 #include "tree_node_ans.hpp"
+#include "my_stack.h"
+
 using namespace std;
 
 class Solution
@@ -31,13 +33,16 @@ public:
 };
 
 
-static bool treenode_mode = true;
+static bool treenode_mode = false;
 static bool haxi_map_mode = false;
+static bool stack_test = true;
 
 int main( ){
 vector<int>  nums1={1,2,5,7,8,0,0,0};
 vector<int>  nums2={100,9,6,3,0,10};
-vector<int>  nums3={1,2,3,4,5};
+vector<int>  nums3={1,2,3,-1,9,6,1,7,-4,4,5};
+vector<int>  nums4={1,3,-1,-3,5,3,6,7};
+vector<char> s1 = {'1','2','*','9','+'};
 string s="dasdadas";
 string t="dasdadas";
 TreeNode_xie<int> *root = new TreeNode_xie<int>(1);
@@ -47,6 +52,14 @@ root->left->left = new TreeNode_xie<int>(4);
 root->left->right = new TreeNode_xie<int>(5);
 root->right->left = new TreeNode_xie<int>(6);
 root->right->right = new TreeNode_xie<int>(7);
+
+// 栈测试
+if(stack_test){
+    my_stack my_stack1;
+    my_stack1.evalRPN(s1);
+    vector<int> result = my_stack1.maxSlidingWindow(nums4,3);
+}
+
 
 
 // 哈希表测试
@@ -66,6 +79,7 @@ if(treenode_mode){
         cout<<"result["<<i<<"]"<<" = "<< result[i]<<endl;
     }
 }
+
 
 
 return 0;
